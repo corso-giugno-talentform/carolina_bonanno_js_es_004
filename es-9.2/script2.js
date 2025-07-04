@@ -65,7 +65,7 @@ console.log('-----------');
 
 conto3.info();
 conto3.visualizzaSaldo();
-conto3.preleva(36000);
+conto3.preleva(36000); // impossibile
 conto3.preleva(1000);
 conto3.deposita(700);
 conto3.calcolaInteressi();
