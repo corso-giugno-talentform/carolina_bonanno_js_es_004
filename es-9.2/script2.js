@@ -19,8 +19,11 @@ class BankAccount {
   deposita(soldi) {
     if (soldi >= 0) {
         this.saldo = this.saldo + soldi;
-        console.log('Hai appena depositato € ' + soldi + '. Il tuo nuovo saldo equivale a: € ' + this.saldo);}
-  }
+        console.log('Hai appena depositato € ' + soldi + '. Il tuo nuovo saldo equivale a: € ' + this.saldo);
+        } else {
+            console.log('Impossibile depositare € ' + soldi + ' perché é un importo negativo.');
+    }
+    };
   
   // Preleva
   preleva(soldi) {
@@ -67,6 +70,6 @@ conto3.info();
 conto3.visualizzaSaldo();
 conto3.preleva(36000); // impossibile
 conto3.preleva(1000);
-conto3.deposita(700);
+conto3.deposita(-700);
 conto3.calcolaInteressi();
 
